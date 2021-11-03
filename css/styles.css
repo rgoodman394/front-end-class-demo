@@ -1,95 +1,123 @@
-/*body{
-    background-color: #fff;
-}
 
-li {
-    list-style-type: none;
+/* -------GLOBAL STYLES-------- */
+  /* Remove default margin */
+  html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+}
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
     margin: 0;
-    padding: 0;
-    display: inline;
-    float: left;
-}
+  }
 
-.flex-container-main {
-    display: 100%;
-}
+  h1 {
+    font-family: 'Rufina', serif;
+    text-decoration: none;
+  }
 
-.flex-container-main > img {
-    flex-basis: 1;
-} */
+  p {
+    font-family: 'PT Serif', serif;
 
-.hero-main {
-  background: url(../images/alaska.png)
-  center;
-  background-size: cover;
-  width: 100%;
-  height: 80vh;
-  max-width: 1000px;
-  margin: 0 auto;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
+  }
 
-.hero-main-cont > h1 {
-  font-size: 60px;
-  color: #fff;
-  text-align: center;
+/* -------HERO IMAGE-------- */
+  .hero-main {
+    background: url(../images/mormon-row.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    top: -22px; 
+    /* margin: 0 auto; */
+  
+  }
 
-}
-
-
-
-h1 {
-  font-family: 'Rufina', serif;
-  text-decoration: none;
-}
-
-p {
-  font-family: 'PT Serif', serif;
-  color: #fff;
-
-}
-
-ul {
+   
+/* -------NAV BAR-------- */
+  .nav > ul {
     display:flex;
+    justify-content: left;
     list-style-type: none;
-    margin: 10px;
-    padding: 10px;
-    /*background-color: #386150; */
-    background: linear-gradient(to bottom,#386150, #000 );
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
+    /* background-color: #386150;
+    background: linear-gradient(to bottom,#386150, #000 ); */
   }
   
-  li {
+  .nav > ul > li {
     float: left;
-    color: white;
     font-family: 'Courier New', Courier, monospace;
-    margin-right: 20px;
-    
-
-    
+    font-size: 20px;
+  }
+  .nav > ul > li a:hover {
+    scale: 1.1;
+    transition-duration:.3s;
+    color: rgb(21, 34, 34);
   }
   
-  li a {
+  .nav > ul > li a {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: darkslategray;
   }
+
+  /* -------HERO CONTENT-------- */
+
+  .hero-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-title > h1 {
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    padding: 20px, 0px, 0px, 0px;
+    margin-top: 125px
+
+  }
+
+  .hero-title > p {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    width: 70%;
+
+  }
+
   
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: rgba(0, 0, 0, 2);
-  }
+
+  
+    
+    /* Change the link color to #111 (black) on hover
+    li a:hover {
+      background-color: rgba(0, 0, 0, 2);
+    } */
 /* css-grid from the codepen */
 
   .gallery-container{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem;
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 .tile img{
@@ -101,6 +129,7 @@ ul {
 .tile:nth-child(1){
     grid-column: span 4;
     grid-row: span 2;
+
 }
 
 .tile:nth-child(2),
