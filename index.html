@@ -23,16 +23,16 @@
 
 
 <body>
-<!------NAV------->
+
     
-<!------HERO IMAGE------->
-<section class="hero-main">
+<!------NAV/HERO IMAGE------->
+<header class="hero-main">
     <div class="hero-main-cont">
         <nav class="nav">
             <ul class="nav-ul">
                 <li class="hover-3"><a href="#">Home</a></li>
-                <li class="hover-3"><a href="https://www.instagram.com/b.good.film/">Portfolio</a></li>
                 <li class="hover-3"><a href=#about-me> About Me</a></li>
+                <li class="hover-3"><a href=#portfolio>Portfolio</a></li>
         </nav>
          <div class="hero-title">
             <h1>HI, MY NAME IS BEKAH.</h1>
@@ -40,15 +40,15 @@
             <!-- <a href="#">Button</a> -->
         </div>
     </div>  
-</section>
+</header>
 
 <!------ABOUT ME------->
 
-<section class="about-me-container">
+<section class="about-me-container" id="about-me">
     <div class="about-me">
         <img class="profile-pic" src="images/profile pic (600 x 600 px).png" alt="profile picture">
         <div class="about-me-text">
-            <h2 id="about-me" class="about-me-title">ABOUT ME</h2>
+            <h2 class="about-me-title">ABOUT ME</h2>
             <p class="about-me-content">Coding and photography are two of my greatest passions.
                 Both involve creativity, technical skill, and a whole lot of experience to
                 master. Both can enrich the lives of others in impactful ways. </p>
@@ -74,12 +74,63 @@
         </div>
     </div>
 </section>
+
 <!------CAMERAS I USE------->
 
-<!------GALLERY------->
-<div class="gallery-container"> <!--All images are 800x600-->
+<section class="cameras-container" id="portfolio">
+    <div class="cameras">
+        <h2 class="cameras-title">CAMERAS I USE</h2>
+        <div class="cameras-buttons">
+            <button id="t3i-btn">CANON T3I</button>
+            <button id="ae1-btn">CANON AE-1</button>
+            <button id="instax-btn">FUJI INSTAX WIDE</button>
+        </div>
+    </div>
+
+</section>
+
+<!------GALLERY 1------->
+<div class="gallery-container1" id="t3i-gallery"> <!--All images are 800x600-->
     <div class="tile">
-        <img src="https://via.placeholder.com/800x600/EE4540/BE3733" alt="">
+        <img src="images/andrew-hutchings-W2Dta_Yiwfw-unsplash.jpg" alt="">
+    </div>
+    <div class="tile">
+        <img src="https://via.placeholder.com/800x600/C72B41/9F2234" alt="">
+    </div>
+    <div class="tile">
+        <img src="https://via.placeholder.com/800x600/800834/66062A" alt="">
+    </div>
+    <div class="tile">
+        <img src="https://via.placeholder.com/800x600/530332/420228" alt="">
+    </div>
+    <div class="tile">
+        <img src="https://via.placeholder.com/800x600/2E122D/2A021A" alt="">
+    </div>
+</div>
+
+<!------GALLERY 2------->
+<div class="gallery-container2" id="ae1-gallery"> <!--All images are 800x600-->
+    <div class="tile">
+        <img src="images/amanda-vick-lFFW-Z89vho-unsplash.jpg" alt="">
+    </div>
+    <div class="tile">
+        <img src="https://via.placeholder.com/800x600/C72B41/9F2234" alt="">
+    </div>
+    <div class="tile">
+        <img src="https://via.placeholder.com/800x600/800834/66062A" alt="">
+    </div>
+    <div class="tile">
+        <img src="https://via.placeholder.com/800x600/530332/420228" alt="">
+    </div>
+    <div class="tile">
+        <img src="https://via.placeholder.com/800x600/2E122D/2A021A" alt="">
+    </div>
+</div>
+
+<!------GALLERY 3------->
+<div class="gallery-container3" id="instax-gallery"> <!--All images are 800x600-->
+    <div class="tile">
+        <img src="images/bd265321-00b0-4b1c-81f2-393372211f1b.1deb9e0c646cc13430e81bb8d15daccd.png" alt="">
     </div>
     <div class="tile">
         <img src="https://via.placeholder.com/800x600/C72B41/9F2234" alt="">
@@ -114,3 +165,13 @@
 </html>
 
 <!------FOOTER------->
+
+<footer>
+    <div class="footer-container">
+        <h3>SOUTHERN // ARROWWOOD</h3>
+        <a href="mailto:rgoodman394@gmail.com"><svg viewBox="0 0 512 512" width="20" fill="#333333" title="envelope">
+            <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
+          </svg>Email Me</a>
+          <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> | Rebekah Goodman | All Rights Reserved</p>
+    </div>
+</footer>
