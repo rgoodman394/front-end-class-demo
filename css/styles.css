@@ -122,7 +122,7 @@ html {
   flex-direction: row;
   justify-content: center;
   align-content:center;
-  background-image: linear-gradient(pink, lightgray);
+  background-color: rgb(233, 233, 233);
 }
 
 .about-me {
@@ -140,8 +140,8 @@ html {
 }
 .profile-pic {
   border-radius: 50%;
-  height: 350px;
-  border: darkslategray solid 15px;
+  height: 300px;
+  border: darkslategray solid 10px;
 }
 
 @media screen and (max-width: 700px){
@@ -157,14 +157,14 @@ html {
 /* -------BRANDS-------- */ 
 
 .brands-container {
-  background-image: linear-gradient(lightgray, white);
+  background-color: rgb(233, 233, 233);
 }
 /* .brands {
   max-width: 100%; 
 } */
 .brands-title {
   text-align: center;
-  margin-top: 25px;
+  padding-top: 20px;
 }
 
 .brands-logos {
@@ -201,11 +201,54 @@ html {
   }
 }
 
+/* -------BRANDS-------- */ 
+
+.cameras-title {
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+
+.cameras-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  
+}
+
+.cameras-buttons > button {
+  /* padding: 20px;
+  border-radius: 180px;
+  background-color: seagreen;
+  text-decoration: none; */
+display:inline-block;
+padding:0.3em 1.2em;
+margin:0 0.3em 0.3em 0;
+border-radius:2em;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-size: 30px;
+font-weight:300;
+color:#FFFFFF;
+background-color:#4eb5f1;
+text-align:center;
+transition: all 0.2s;
+border-style: none;
+}
+.cameras-buttons > button:hover{
+background-color:#4095c6;
+}
+/* @media all and (max-width:30em){
+ a.button3{
+  display:block;
+  margin:0.2em auto;
+ }
+}
+} */
 
 /* -------GALLERY-------- */ 
 /* css-grid from the codepen */
 
-  .gallery-container{
+  .gallery-container1, .gallery-container2, .gallery-container3 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem;
@@ -235,7 +278,7 @@ html {
     grid-column: span 3;
 }
 @media screen and (max-width: 700px){
-    .gallery-container{
+    .gallery-container1, .gallery-container2, .gallery-container3 {
         display: block;
         margin: 5px;
     }
@@ -316,4 +359,25 @@ html {
   .modal-content {
     width: 100%;
   }
+}
+
+/* -------FOOTER-------- */ 
+
+.footer-container {
+  background-color: darkslategray;
+  height: 30vh;
+  text-align: center;
+
+}
+
+.footer-container > h3 {
+  color: #fff;
+  font-weight: 200;
+  font-size: 35px;
+  padding: 50px 0 20px 0;
+}
+
+.copyright {
+  color: #fff;
+  font-weight: 100;
 }

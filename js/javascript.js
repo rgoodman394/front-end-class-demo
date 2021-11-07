@@ -19,6 +19,43 @@ console.log(i)
     }
 }
 
+const t3iTrigger = document.getElementById("t3i-gallery");
+const ae1Trigger = document.getElementById("ae1-gallery");
+const instaxTrigger = document.getElementById("instax-gallery");
+const t3iBtn = document.getElementById("t3i-btn");
+const ae1Btn = document.getElementById("ae1-btn");
+const instaxBtn = document.getElementById("instax-btn");
+t3iBtn.onclick = function () {
+  if (t3iTrigger.style.display !== "none") {
+    // t3iTrigger.style.display = "none";
+    ae1Trigger.style.display = "none";
+    instaxTrigger.style.display = "none";
+  } else {
+    t3iTrigger.style.display = "grid";
+  }
+};
+
+ae1Btn.onclick = function () {
+    if (ae1Trigger.style.display !== "none") {
+      t3iTrigger.style.display = "none";
+      instaxTrigger.style.display = "none";
+    } else {
+      ae1Trigger.style.display = "grid";
+    }
+  };
+
+  instaxBtn.onclick = function () {
+    if (instaxTrigger.style.display !== "none") {
+      t3iTrigger.style.display = "none";
+      ae1Trigger.style.display = "none";
+    } else {
+      instaxTrigger.style.display = "grid";
+    }
+  };
+
+
+
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
