@@ -25,29 +25,31 @@ const instaxTrigger = document.getElementById("instax-gallery");
 const t3iBtn = document.getElementById("t3i-btn");
 const ae1Btn = document.getElementById("ae1-btn");
 const instaxBtn = document.getElementById("instax-btn");
+
+
 t3iBtn.onclick = function () {
-  if (t3iTrigger.style.display !== "none") {
-    // t3iTrigger.style.display = "none";
     ae1Trigger.style.display = "none";
     instaxTrigger.style.display = "none";
+  if (t3iTrigger.style.display !== "none") {
+    // t3iTrigger.style.display = "none";
   } else {
     t3iTrigger.style.display = "grid";
   }
 };
 
 ae1Btn.onclick = function () {
+    t3iTrigger.style.display = "none";
+    instaxTrigger.style.display = "none";
     if (ae1Trigger.style.display !== "none") {
-      t3iTrigger.style.display = "none";
-      instaxTrigger.style.display = "none";
     } else {
       ae1Trigger.style.display = "grid";
     }
   };
 
   instaxBtn.onclick = function () {
+    t3iTrigger.style.display = "none";
+    ae1Trigger.style.display = "none";
     if (instaxTrigger.style.display !== "none") {
-      t3iTrigger.style.display = "none";
-      ae1Trigger.style.display = "none";
     } else {
       instaxTrigger.style.display = "grid";
     }
