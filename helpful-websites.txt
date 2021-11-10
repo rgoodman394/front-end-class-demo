@@ -30,6 +30,8 @@ masonry: https://masonry.desandro.com/layout.html
 
 mosaic: https://medium.com/@axel/mosaic-layouts-with-css-grid-d13f4e3ed2ae
 
+93 cool box shadows: https://getcssscan.com/css-box-shadow-examples
+
 
 
 

@@ -7,6 +7,11 @@ var modalImg = document.getElementById("img01");
 function renderImgInModal(imageSource){
     modal.style.display = "block";
     modalImg.src = imageSource;
+    modalImg.classList.add('runanimation')
+
+    setTimeout(function() {
+        modalImg.classList.remove('runanimation')
+    }, 1000)
 }
 var tileImages = document.getElementsByClassName("tile")
 for(var i = 0; i < tileImages.length; i++){
@@ -25,34 +30,57 @@ const instaxTrigger = document.getElementById("instax-gallery");
 const t3iBtn = document.getElementById("t3i-btn");
 const ae1Btn = document.getElementById("ae1-btn");
 const instaxBtn = document.getElementById("instax-btn");
-
+const t3iGalleryContainer = document.getElementById("t3i-gallery-container");
+const ae1GalleryContainer = document.getElementById("ae1-gallery-container");
+const instaxGalleryContainer = document.getElementById("instax-gallery-container");
 
 t3iBtn.onclick = function () {
-    ae1Trigger.style.display = "none";
-    instaxTrigger.style.display = "none";
-  if (t3iTrigger.style.display !== "none") {
-    // t3iTrigger.style.display = "none";
-  } else {
-    t3iTrigger.style.display = "grid";
-  }
+    ae1GalleryContainer.style.display = "none";
+    instaxGalleryContainer.style.display = "none";
+
+//   if (t3iTrigger.style.display !== "none") {
+//     // t3iTrigger.style.display = "none";
+//   } else {
+    console.log('clicking on ', t3iGalleryContainer)
+    // t3iGalleryContainer.style.block = "block";
+
+    // if (t3iGalleryContainer.style.display !== "none") {
+    // } else {
+        t3iGalleryContainer.style.display = "block";
+    // }
 };
 
 ae1Btn.onclick = function () {
-    t3iTrigger.style.display = "none";
-    instaxTrigger.style.display = "none";
-    if (ae1Trigger.style.display !== "none") {
-    } else {
-      ae1Trigger.style.display = "grid";
-    }
+    t3iGalleryContainer.style.display = "none";
+    instaxGalleryContainer.style.display = "none";
+    // // if (ae1Trigger.style.display !== "none") {
+    // // } else {
+    // console.log(ae1GalleryContainer)
+
+    // if (ae1GalleryContainer.style.display !== "none") {
+    // } else {
+    console.log('clicking on ', ae1GalleryContainer)
+
+        ae1GalleryContainer.style.display = "block";
+    // }
   };
 
   instaxBtn.onclick = function () {
-    t3iTrigger.style.display = "none";
-    ae1Trigger.style.display = "none";
-    if (instaxTrigger.style.display !== "none") {
-    } else {
-      instaxTrigger.style.display = "grid";
-    }
+    t3iGalleryContainer.style.display = "none";
+    ae1GalleryContainer.style.display = "none";
+    // // if (instaxTrigger.style.display !== "none") {
+    // // } else {
+    //     console.log(instaxGalleryContainer)
+    
+    // console.log('clicking')
+
+    // if (instaxGalleryContainer.style.display !== "none") {
+    // } else {
+        console.log('clicking on ', instaxGalleryContainer)
+
+        instaxGalleryContainer.style.display = "block";
+    // }
+    // instaxGalleryContainer.style.block = "block";
   };
 
 
