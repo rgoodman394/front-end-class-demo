@@ -216,12 +216,16 @@ html {
 /* -------BRANDS-------- */ 
 
 .brands-container {
-  background-color: rgb(39, 40, 43);
+  /* background-color: rgb(39, 40, 43); */
+  background: rgb(75,140,166);
+  background: linear-gradient(158deg, rgba(75,140,166,1) 10%, rgba(39,40,43,1) 100%);
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* .brands {
-  max-width: 100%; 
-} */
-.brands-title {
+
+/* .brands-title {
   text-align: center;
   padding-top: 20px;
   font-style: italic;
@@ -229,28 +233,14 @@ html {
   background: -webkit-linear-gradient( #0071B9, #26ABFF, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.brands > hr {
-  width: 400px;
-}
+} */
 
 .brands-logos {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  /* justify-content: space-between; */
-
+  align-content: center;
   
-  /* max-width: 1080px;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
-	position: relative;
-	width: 100%;
-  height: auto;
-  padding-bottom: 100%; 
-	vertical-align: middle; 
-	overflow: hidden;  */
 }
 
 .brands-logos > img {
@@ -270,16 +260,32 @@ html {
 
 /* -------BRANDS-------- */ 
 
+.cameras-cards {
+  display: flex;
+  justify-content: center;
+
+}
+
 .cameras-title {
   text-align: center;
   padding: 30px 0 30px 0;
   font-style: italic;
 }
 
+.camera-img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  padding-bottom: 10px;
+}
+
 .cameras-buttons {
+  /* padding: 0px 50px 0px 50px; */
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   
 }
 
@@ -294,7 +300,7 @@ margin:0 0.3em 0.3em 0;
 border-radius:2em;
 text-decoration:none;
 font-family:'Roboto',sans-serif;
-font-size: 30px;
+font-size: 20px;
 font-weight:300;
 color:#FFFFFF;
 background-color:#4eb5f1;
@@ -304,6 +310,19 @@ border-style: none;
 }
 .cameras-buttons > button:hover{
 background-color:#4095c6;
+}
+
+@media screen and (min-width: 700px){
+  .camera-img {
+    height: 250px;
+    width: 250px;
+  }
+  .cameras-buttons {
+    padding: 0px 50px 0px 50px;
+  }
+  .cameras-buttons > button {
+    font-size: 30px;
+  }
 }
 /* @media all and (max-width:30em){
  a.button3{
@@ -450,6 +469,9 @@ background-color:#4095c6;
   font-weight: 200;
   font-size: 35px;
   padding: 50px 0 20px 0;
+}
+.socials-footer > img{
+  height: 30px;
 }
 
 .copyright {
