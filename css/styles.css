@@ -53,7 +53,8 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 55vh;
+    overflow: hidden;
     /* position: top; */
     /* top: -22px;  */
     /* margin: 0 auto; */
@@ -63,10 +64,11 @@ html {
 /* -------NAV BAR-------- */
   .nav > ul {
     display:flex;
-    justify-content: left;
+    justify-content: center;
     list-style-type: none;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.3);
+    padding-left: 0;
     /* padding-top: 10px; */
   }
   
@@ -99,37 +101,71 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
   }
 
   .hero-title > h1 {
-    font-size: 60px;
+    font-size: 35px;
     color: #fff;
     text-align: center;
     padding: 20px, 0px, 0px, 0px;
-    margin-top: 125px
+    margin-top: 60px;
 
   }
 
   .hero-title > p {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     text-align: center;
     width: 70%;
 
   }
 
-  @media screen and (max-width: 700px){
+  @media (min-width: 768px) and (max-width: 1024px){
+    .hero-main {
+      height: 60vh }
+
+    
     .hero-title > h1 {
-      font-size: 35px;
+      font-size: 45px;
     }
 
     .hero-title > p {
-      font-size: 16px;
+      font-size: 18px;
+    }
+
+    .nav > ul > li {
+      font-size: 25px;
+    }
+
+    .nav > ul > li a{
+      padding: 14px 25px 14px 25px;
+    }
+}
+
+  @media screen and (min-width: 1024px){
+    .hero-main {
+    background: url(../images/mormon-row.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    }
+    
+    .hero-title > h1 {
+      font-size: 60px;
+      padding-top: 100px;
+    }
+
+    .hero-title > p {
+      font-size: 18px;
     }
 
     .hero-main {
-      height: 70vh;
-      overflow: hidden;
+      height: 80vh;
       /* position: top; */
       /* top: -22px;  */
       /* margin: 0 auto; */
@@ -137,11 +173,14 @@ html {
 
     .nav > ul {
       display:flex;
-      justify-content: center;
-      padding: 0px;
-      z-index: 1;
-      background-color: rgba(255, 255, 255, 0.3);
+      justify-content: left;
+      padding: 10px 0 10px 20px;
       /* padding-top: 10px; */
+    }
+
+    .nav > ul > li {
+      font-size: 20px;
+      padding-right: 10px;
     }
 }
 /* -------ABOUT ME-------- */ 
@@ -236,40 +275,50 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 } */
+.brands-logos >img {
+  max-width: 60px;
+  padding: 20px 10px 0px 10px;
+}
 
 .brands-logos {
   display: block;
-  justify-items: center;
-  align-items: center;
   text-align: center;
+  justify-content: center;
+  align-content: center;
 }
 
-.brands-logos > img {
+ @media (min-width: 768px) and (max-width: 1024px){
+  .brands-logos > img {
     padding: 20px 10px 0px 10px;
-    max-width: 60px;
+    max-width: 80px;
     width: 100%;
  }
 
-@media screen and (min-width: 700px){
-  .brands-logos >img {
-    max-width: 60px;
-  }
-
+ }
+@media screen and (min-width: 1024px){
   .brands-logos {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-    
+    display: block;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .brands-logos > img {
+      padding: 20px 20px 0px 20px;
+      max-width: 80px;
+      width: 100%;
   }
 }
 
-/* -------BRANDS-------- */ 
-
+/* -------CAMERAS-------- */ 
+.cameras-container {
+  width: 100%;
+}
 .cameras-cards {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
 }
 
@@ -290,14 +339,17 @@ html {
   background: linear-gradient(to right, white, #0071B9, #26ABFF, #0071B9, white); 
 }
 .cameras-buttons {
-  /* padding: 0px 50px 0px 50px; */
+  padding: 0px 15px 0px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 10px 0 10px;
   
 }
+.cameras-buttons > p {
+  color: #838383;
+}
+
 
 .camera-img {
   height: 100px;
@@ -323,7 +375,6 @@ html {
 .cameras-buttons > button {
 /* margin: 0 10px 0 10px; */
 /* display:inline-block; */
-border-radius:10%;
 text-decoration:none;
 font-family:'Roboto',sans-serif;
 font-size: 20px;
@@ -345,9 +396,9 @@ background-color:#4095c6;
     height: 250px;
     width: 250px;
   }
-  .cameras-buttons {
+  /* .cameras-buttons {
     padding: 0px 50px 0px 50px;
-  }
+  } */
   .cameras-buttons > button {
     font-size: 30px;
   }
