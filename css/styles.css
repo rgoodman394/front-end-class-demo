@@ -1,47 +1,3 @@
-<<<<<<< HEAD
-/*body{
-    background-color: #fff;
-}
-
-li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline;
-    float: left;
-}
-
-.flex-container-main {
-    display: 100%;
-}
-
-.flex-container-main > img {
-    flex-basis: 1;
-} */
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.hero-main {
-  background: url(../images/4507-26.jpg)
-  center;
-  background-size: cover;
-  width: 100%;
-  height: 80vh;
-  margin: 0 auto;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-main-cont > h1 {
-  font-size: 60px;
-  color: #fff;
-  text-align: center;
-=======
->>>>>>> major update nav and hero section
 
 /* -------GLOBAL STYLES-------- */
   /* Remove default margin */
@@ -72,17 +28,7 @@ body {
   p {
     font-family: 'PT Serif', serif;
 
-<<<<<<< HEAD
-h1 {
-  font-family: 'Rufina', serif;
-  text-decoration: none;
-}
-
-p {
-  font-family: 'PT Serif', serif;
-=======
   }
->>>>>>> major update nav and hero section
 
 /* -------HERO IMAGE-------- */
   .hero-main {
