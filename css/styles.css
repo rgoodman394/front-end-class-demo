@@ -1,7 +1,7 @@
 
 /* -------GLOBAL STYLES-------- */
   /* Remove default margin */
-  html, body {
+html, body {
   margin: 0;
   padding: 0;
   height: 100%; 
@@ -12,178 +12,111 @@ html {
   scroll-behavior: smooth;
 }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  p,
-  figure,
-  blockquote,
-  dl,
-  ul,
-  dd {
-    margin: 0;
-  }
-
-  h1 {
-    /* Font-Family: 'Catamaran', Sans-Serif; */
-    /* font-family: 'Playfair Display', serif; */
-    font-family: 'Old Standard TT', serif;
-    font-style: italic;
-  }
-  h2 {
-    /* Font-Family: 'Catamaran', Sans-Serif; */
-    font-family: 'Old Standard TT', serif;
-    /* font-family: 'Playfair Display', serif; */
-    /* text-decoration: none; */
-  }
-
-  p {
-    /* font-family: 'PT Serif', serif; */
-    /* Font-Family: 'Merriweather Sans', Sans-Serif; */
-    font-family: 'Crimson Text', serif;
-
-  }
-
-/* -------HERO IMAGE-------- */
-  .hero-main {
-    background: url(../images/mormon-row.jpg);
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 55vh;
-    overflow: hidden;
-    /* position: top; */
-    /* top: -22px;  */
-    /* margin: 0 auto; */
-  
-  }
-   
-/* -------NAV BAR-------- */
-  .nav > ul {
-    display:flex;
-    justify-content: center;
-    list-style-type: none;
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding-left: 0;
-    /* padding-top: 10px; */
-  }
-  
-  .nav > ul > li {
-    float: left;
-    font-family: 'Crimson Text', serif;
-    font-size: 16px;
-  }
-  .nav > ul > li a:hover {
-    scale: 1.1;
-    transition-duration:.3s;
-    color: rgb(21, 34, 34);
-  }
-  
-  .nav > ul > li a {
-    display: block;
-    text-align: center;
-    padding: 14px 0 14px 16px;
-    text-decoration: none;
-    color: darkslategray;
-  }
-
-  #about-me {
-    scroll-behavior: smooth;
-  }
-
-/* -------HERO CONTENT-------- */
-
-  .hero-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .hero-title > h1 {
-    font-size: 35px;
-    color: #fff;
-    text-align: center;
-    padding: 20px, 0px, 0px, 0px;
-    margin-top: 60px;
-
-  }
-
-  .hero-title > p {
-    font-size: 16px;
-    color: #fff;
-    text-align: center;
-    width: 70%;
-
-  }
-
-  @media (min-width: 768px) and (max-width: 1024px){
-    .hero-main {
-      height: 60vh }
-
-    
-    .hero-title > h1 {
-      font-size: 45px;
-    }
-
-    .hero-title > p {
-      font-size: 18px;
-    }
-
-    .nav > ul > li {
-      font-size: 25px;
-    }
-
-    .nav > ul > li a{
-      padding: 14px 25px 14px 25px;
-    }
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+ul,
+dd {
+  margin: 0;
 }
 
-  @media screen and (min-width: 1024px){
-    .hero-main {
-    background: url(../images/mormon-row.jpg);
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 60vh;
-    overflow: hidden;
-    }
-    
-    .hero-title > h1 {
-      font-size: 60px;
-      padding-top: 100px;
-    }
-
-    .hero-title > p {
-      font-size: 18px;
-    }
-
-    .hero-main {
-      height: 80vh;
-      /* position: top; */
-      /* top: -22px;  */
-      /* margin: 0 auto; */
-    }
-
-    .nav > ul {
-      display:flex;
-      justify-content: left;
-      padding: 10px 0 10px 20px;
-      /* padding-top: 10px; */
-    }
-
-    .nav > ul > li {
-      font-size: 20px;
-      padding-right: 10px;
-    }
+h1, h2, button {
+  /* Font-Family: 'Catamaran', Sans-Serif; */
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Old Standard TT', serif;
+  font-style: italic;
 }
-/* -------ABOUT ME-------- */ 
+
+p {
+  /* font-family: 'PT Serif', serif; */
+  /* Font-Family: 'Merriweather Sans', Sans-Serif; */
+  font-family: 'Crimson Text', serif;
+
+}
+  
+  /* -------HERO IMAGE-------- */
+.hero-main {
+  background: url(../images/mormon-row.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 55vh;
+  overflow: hidden;
+  /* position: top; */
+  /* top: -22px;  */
+  /* margin: 0 auto; */
+
+}
+     
+  /* -------NAV BAR-------- */
+.nav > ul {
+  display:flex;
+  justify-content: center;
+  list-style-type: none;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-left: 0;
+  /* padding-top: 10px; */
+}
+
+.nav > ul > li {
+  float: left;
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+}
+
+.nav > ul > li a:hover {
+  scale: 1.1;
+  transition-duration:.3s;
+  color: rgb(21, 34, 34);
+}
+
+.nav > ul > li a {
+  display: block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+  text-decoration: none;
+  color: darkslategray;
+}
+  
+#about-me {
+  scroll-behavior: smooth;
+}
+  
+  /* -------HERO CONTENT-------- */
+  
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.hero-title > h1 {
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  padding: 20px, 0px, 0px, 0px;
+  margin-top: 60px;
+
+}
+
+.hero-title > p {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  width: 70%;
+}
+  
+  
+  /* -------ABOUT ME-------- */ 
 .about-me-container {
   display: flex;
   flex-direction: row;
@@ -213,13 +146,14 @@ html {
   color: rgb(39, 40, 43);
   font-style: italic;
 }
+
 .gradient-line{ 
   display: block;
   border: none;
   height: 1px;
   background: #0071B9;
   background: linear-gradient(to right, #0071B9, #26ABFF, white);
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .about-me-text{
@@ -240,21 +174,10 @@ html {
 
 .about-me-socials:hover {
   filter:opacity(60%);
-  transform:matrix(10);
 }
-
-@media screen and (max-width: 700px){
   
-  .about-me-container {
-    flex-direction: column;
-  }
-  .about-me-text {
-    width: 400px;
-  }
-}
-
-/* -------BRANDS-------- */ 
-
+  /* -------BRANDS-------- */ 
+  
 .brands-container {
   /* background-color: rgb(39, 40, 43); */
   background: rgb(75,140,166);
@@ -286,132 +209,107 @@ html {
   justify-content: center;
   align-content: center;
 }
-
- @media (min-width: 768px) and (max-width: 1024px){
-  .brands-logos > img {
-    padding: 20px 10px 0px 10px;
-    max-width: 80px;
-    width: 100%;
- }
-
- }
-@media screen and (min-width: 1024px){
-  .brands-logos {
-    display: block;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-  }
   
-  .brands-logos > img {
-      padding: 20px 20px 0px 20px;
-      max-width: 80px;
-      width: 100%;
-  }
-}
-
-/* -------CAMERAS-------- */ 
+  
+  /* -------CAMERAS-------- */ 
 .cameras-container {
   width: 100%;
-}
-.cameras-cards {
-  display: flex;
+  align-content: center;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+}
 
+.cameras-cards {
+  max-width: 800px;
+  margin: 0 auto 0 auto;
+}
+
+.t3i-camera, .ae1-camera, .instax-camera {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  overflow: auto;
+  align-content: center;
+  justify-content: flex-start;
 }
 
 .cameras-title {
   text-align: center;
-  padding: 30px 0 0 0;
+  padding: 75px 0 0 0;
   font-style: italic;
+}
+
+.cameras-description {
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  max-width: 60%;
+  text-align:justify;
+  color: #838383;
 }
 
 .cameras-title::after{
   content: " ";
-  margin: 10px auto 50px auto;
+  margin: 10px auto 30px auto;
   display: block;
   height: 1px;
   width: 50%;
-  
   background-color: #0071B9;
   background: linear-gradient(to right, white, #0071B9, #26ABFF, #0071B9, white); 
 }
-.cameras-buttons {
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-}
-.cameras-buttons > p {
-  color: #838383;
-}
 
+/* .cameras-images {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0 10px 0 10px;
+} */
 
 .camera-img {
-  height: 100px;
-  width: 100px;
+  width: 100%;
+  max-width: 275px;
   object-fit: cover;
   overflow: hidden;
   border-radius: 50%;
   padding-bottom: 10px;
 }
-
-/* .camera-img:hover {
-  opacity: 0.25;
-} */
-
-.t3i-camera {
-  padding-left: 10px;
+.cameras-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.instax-camera {
-  padding-right: none;
+button > h3 {
+  color: rgb(39, 40, 43);
+  font-family: 'Old Standard TT', serif;
+  font-size: 14px;
 }
 
-.cameras-buttons > button {
-/* margin: 0 10px 0 10px; */
-/* display:inline-block; */
-text-decoration:none;
-font-family:'Roboto',sans-serif;
-font-size: 20px;
-font-weight:300;
-color:#FFFFFF;
-background: rgba(75,140,166,1);
-text-align:center;
-transition: all 0.2s;
-border-style: none;
-padding: 15px 10px;
-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f3f7f8;
+  transition: all 0.2s;
+  border-style: none;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  padding: 15px 10px 15px 10px;
+  margin: 10px 15px 50px 15px;
 }
-.cameras-buttons > button:hover{
-background-color:#4095c6;
+button:hover{
+  background-color:rgba(0, 0, 0, 0.15);
+  cursor:pointer;
 }
-
-@media screen and (min-width: 700px){
-  .camera-img {
-    height: 250px;
-    width: 250px;
-  }
-  /* .cameras-buttons {
-    padding: 0px 50px 0px 50px;
-  } */
-  .cameras-buttons > button {
-    font-size: 30px;
-  }
-}
-
+  
 /* -------GALLERY-------- */ 
-/* css-grid from the codepen */
-
+  /* css-grid from the codepen */
+  
 .gallery {
   background-color: #FFFFFF;
+  padding-bottom: 25px;
 }
 
-  .gallery-container1, .gallery-container2, .gallery-container3 {
+.gallery-container1, .gallery-container2, .gallery-container3 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem;
@@ -454,20 +352,11 @@ background-color:#4095c6;
 .tile:nth-child(5){
     grid-column: span 3;
 }
-@media screen and (max-width: 700px){
-    .gallery-container1, .gallery-container2, .gallery-container3 {
-        display: block;
-        margin: 5px;
-    }
-    .tile{
-      display: block; 
-      margin-bottom: 1rem;
-    }
-}
 
+  
 /* test modal formatting */
 #myImg:hover {opacity: 0.7;}
-
+  
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -482,7 +371,7 @@ background-color:#4095c6;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
-
+  
 /* Modal Content (Image) */
 .modal-content {
   margin: auto;
@@ -496,12 +385,12 @@ background-color:#4095c6;
   animation-name: zoom;
   animation-duration: 0.6s;
 }
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
 /* The Close Button */
 .close {
   position: absolute;
@@ -519,34 +408,205 @@ background-color:#4095c6;
   text-decoration: none;
   cursor: pointer;
 }
+  
+  /* 100% Image Width on Smaller Screens */
+ 
+  
+/* -------FOOTER-------- */ 
+  
+.footer-container {
+  background: linear-gradient(158deg, rgba(75,140,166,1) 10%, rgba(39,40,43,1) 100%);
+  position:fixed bottom;
+  height: 30vh;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  align-content: end;
+}
+.footer-container{
+  display:flex;
+  flex-direction: column;
+}
+.socials-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+/* .footer-container > h3 {
+  color: #fff;
+  font-weight: 200;
+  font-size: 35px;
+  padding: 50px 0 20px 0;
+} */
+.img-footer {
+  height: 40px;
+  padding: 10px 10px 15px 10px;
+
+}
+.img-footer:hover {
+  filter:opacity(60%);
+}
+
+.copyright {
+  color: #e6e6e6;
+  font-size: 10px;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+/* -------MEDIA QUERIES-------- */ 
+
+/* -------MOBILES-------- */ 
+@media screen and (max-width: 700px){
+    
+  .about-me-container {
+    flex-direction: column;
+  }
+
+  .about-me-text {
+    width: 400px;
+  }
+
+  .gallery-container1, .gallery-container2, .gallery-container3 {
+      display: block;
+      margin: 5px;
+  }
+
+  .tile{
+    display: block; 
+    margin-bottom: 1rem;
+  }
+
   .modal-content {
     width: 100%;
   }
 }
 
-/* -------FOOTER-------- */ 
+/* -------TABLETS/MEDIUM SCREENS-------- */ 
+@media (min-width: 768px) and (max-width: 1024px){
+  .hero-main {
+    height: 60vh }
 
-.footer-container {
-  background-color: darkslategray;
-  height: 30vh;
-  text-align: center;
+  
+  .hero-title > h1 {
+    margin-top: 100px;
+    font-size: 45px;
+  }
 
-}
+  .hero-title > p {
+    font-size: 18px;
+  }
 
-.footer-container > h3 {
-  color: #fff;
-  font-weight: 200;
-  font-size: 35px;
-  padding: 50px 0 20px 0;
-}
-.socials-footer > img{
-  height: 30px;
-}
+  .nav > ul > li {
+    font-size: 25px;
+  }
 
-.copyright {
-  color: #fff;
-  font-weight: 100;
-}
+  .nav > ul > li a{
+    padding: 14px 25px 14px 25px;
+  }
+
+  .brands-logos > img {
+      padding: 20px 10px 0px 10px;
+      max-width: 80px;
+      width: 100%;
+    }
+
+  .brands-logos > img {
+      padding: 20px 10px 0px 10px;
+      max-width: 80px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 768px){
+    .copyright {
+      font-size: 15px;
+    }
+  }
+/* -------DESKTOPS-------- */ 
+
+@media screen and (min-width: 1024px){
+  .hero-main {
+  background: url(../images/mormon-row.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  }
+  
+  .hero-title > h1 {
+    font-size: 60px;
+    padding-top: 100px;
+  }
+
+  .hero-title > p {
+    font-size: 18px;
+  }
+
+  .hero-main {
+    height: 80vh;
+    /* position: top; */
+    /* top: -22px;  */
+    /* margin: 0 auto; */
+  }
+
+  .nav > ul {
+    display:flex;
+    justify-content: left;
+    padding: 10px 0 10px 20px;
+    /* padding-top: 10px; */
+  }
+
+  .nav > ul > li {
+    font-size: 20px;
+    padding-right: 10px;
+  }
+
+  .brands-logos {
+    display: block;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .brands-logos > img {
+      padding: 20px 20px 0px 20px;
+      max-width: 80px;
+      width: 100%;
+  }
+    
+  br {
+    display: none;
+  }
+
+  .cameras-description {
+    max-width: 800px;
+  }
+
+  .cameras-cards {
+    max-width: 922px
+  }
+
+  .cameras-buttons > button {
+    font-size: 30px;
+  }
+
+  .button{
+    margin: 10px 25px 50px 25px;
+  }
+
+  button > h3 {
+    font-size: 24px;
+  }
+  }
+
+
+

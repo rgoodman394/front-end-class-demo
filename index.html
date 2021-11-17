@@ -13,8 +13,6 @@
     <title>REBEKAH GOODMAN // SOUTHERN ARROWWOOD</title>
 </head>
 
-
-
 <body>
 
     
@@ -41,7 +39,7 @@
 </header>
 
 <!------ABOUT ME------->
-
+<main>
 <section class="about-me-container" id="about-me">
     <div class="about-me">
         <img class="profile-pic" src="images/profile pic (600 x 600 px).png" alt="profile picture">
@@ -56,9 +54,9 @@
                     counselor and in coding and photography.</p>
                 <p>
                 </p>
-                <a href="https://github.com/rgoodman394"><img class="about-me-socials" src="images/follows/github.svg" alt="github" ></a>
-                <a href="https://www.instagram.com/b.good.film/"><img class="about-me-socials" src="images/follows/instagram.svg" alt="instagram"></a> 
-                <a href="https://www.linkedin.com/in/rebekah-goodman-abb98b147/"><img class="about-me-socials" src="images/follows/linkedin.svg" alt="linkedin"></a>
+                <a href="https://github.com/rgoodman394" target="_blank"><img class="about-me-socials" src="images/follows/github.svg" alt="github" ></a>
+                <a href="https://www.instagram.com/b.good.film/" target="_blank"><img class="about-me-socials" src="images/follows/instagram.svg" alt="instagram"></a> 
+                <a href="https://www.linkedin.com/in/rebekah-goodman-abb98b147/" target="_blank"><img class="about-me-socials" src="images/follows/linkedin.svg" alt="linkedin"></a>
             </div>
         </div>
     </div>
@@ -84,21 +82,42 @@
 
 <section class="cameras-container" id="portfolio">
     <h2 class="cameras-title">CAMERAS I USE</h2>
+    <p class="cameras-description">Cameras, in their most basic form, are containers that collect and
+        preserve the surrounding light at a specific point in time. They are tools, allowing the user 
+        to capture memories and people and places and things, in a way that otherwise would be lost 
+        forever. I shoot with a combination of film and digital cameras. Each one gives a different feel, but
+        I tend to prefer a vintage, emotive image and each one has their ways of achieving the look.
+        Click on the cameras below to see some of my favorite pictures. Then, select any image to enlarge. </p>
     <div class="cameras-cards">
-        <div class="cameras-buttons t3i-camera">
-            <img class="camera-img" src="images/andrew-hutchings-W2Dta_Yiwfw-unsplash.jpg" alt="canont3i">
-            <button id="t3i-btn">CANON T3I</button>
-            <p>The camera that started it all for me - simple but powerful.</p>
-        </div>
-        <div class="cameras-buttons ae1-camera">
-            <img class="camera-img" src="images/ae1.jpg" alt="canonae1"> 
-            <button id="ae1-btn">CANON AE-1</button>
-            <p>50 years old and still going strong.</p>
-        </div>
-        <div class="cameras-buttons instax-camera">
+        <!-- <div class="cameras-images">
+            <img class="camera-img" src="images/canont3i.jpg" alt="canont3i">
+            <img class="camera-img" src="images/ae1.jpg" alt="canonae1">
             <img class="camera-img" src="images/instaxwide.jpg" alt="instax">
-            <button id="instax-btn">INSTAX WIDE</button>
-            <p>Fun camera that makes one-of-a-kind images.</p>
+        </div> -->
+        <div class="cameras-buttons">
+            <div class="t3i-camera">
+                <button id="t3i-btn">
+                    <img class="camera-img" src="images/canont3i.jpg" alt="canont3i">
+                    <h3>CANON T3-I</h3>
+                </button>
+                <!-- <p>The camera that started it all for me - simple but powerful.</p> -->
+            </div>
+
+            <div class="ae1-camera">
+                <button id="ae1-btn">
+                    <img class="camera-img" src="images/ae1.jpg" alt="canonae1">
+                    <h3>CANON AE-1</h3>
+                </button>
+                <!-- <p>50 years old and still going strong.</p> -->
+            </div>
+
+            <div class="instax-camera">
+                <button id="instax-btn">
+                    <img class="camera-img" src="images/instaxwide.jpg" alt="instax">
+                    <h3>INSTAX WIDE </h3>
+                </button>
+                <!-- <p>Fun camera that makes one-of-a-kind images.</p> -->
+            </div>
         </div>
     </div>
 
@@ -153,26 +172,26 @@
     <div id="instax-gallery-container">
         <div class="gallery-container3" id="instax-gallery"> <!--All images are 800x600-->
             <div class="tile">
-                <img src="images/bd265321-00b0-4b1c-81f2-393372211f1b.1deb9e0c646cc13430e81bb8d15daccd.png" alt="">
+                <img src="images/instax images/1.png" alt="">
             </div>
             <div class="tile">
-                <img src="https://via.placeholder.com/800x600/C72B41/9F2234" alt="">
+                <img src="images/instax images/2.png" alt="">
             </div>
             <div class="tile">
-                <img src="https://via.placeholder.com/800x600/800834/66062A" alt="">
+                <img src="images/instax images/3.png" alt="">
             </div>
             <div class="tile">
-                <img src="https://via.placeholder.com/800x600/530332/420228" alt="">
+                <img src="images/instax images/4.png" alt="">
             </div>
             <div class="tile">
-                <img src="https://via.placeholder.com/800x600/2E122D/2A021A" alt="">
+                <img src="images/instax images/5.png" alt="">
             </div>
         </div>
     </div>
 
 </div>
 
-
+</main>
 <!------MODAL HTML------->
 
 <!-- The Modal -->
@@ -195,16 +214,24 @@
 
 <footer>
     <div class="footer-container">
-        <h3>SOUTHERN // ARROWWOOD</h3>
-        <div class="socials-footer">
-            <img src="images/follows/github.svg" alt="github">
-            <img src="images/follows/instagram.svg" alt="instagram">
-            <img src="images/follows/linkedin.svg" alt="linkedin">
-            <img src="images/follows/filmroll.svg" alt="statefilm">
+        <div class="footer-content">
+            <div class="socials-footer">
+                <a href="https://github.com/rgoodman394" target="_blank"><img class="img-footer"
+                        src="images/follows/GitHub-footer.png" alt="github"></a>
+                <a href="https://www.instagram.com/b.good.film/" target="_blank"><img class="img-footer"
+                        src="images/follows/instagram-footer.svg" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/rebekah-goodman-abb98b147/" target="_blank"><img class="img-footer"
+                        src="images/follows/linkedin.png" alt="linkedin"></a>
+                <a href="https://statefilmlab.com" target="_blank"><img class="img-footer"
+                        src="images/follows/film-footer.svg" alt="statefilm"></a>
+                <a href="mailto:rgoodman394@gmail.com"> <img class="img-footer" src="images/follows/email-footer.png"
+                        alt="email"></a>
+            </div>
+            <p class="copyright">Copyright &copy; <script>
+                    document.write(new Date().getFullYear())
+                </script> &ensp; | &ensp;Rebekah Goodman &ensp;| &ensp;Come Again Soon</p>
         </div>
-        <a href="mailto:rgoodman394@gmail.com"><svg viewBox="0 0 512 512" width="20" fill="#333333" title="envelope">
-            <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
-          </svg>Email Me</a>
-          <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> | Rebekah Goodman | All Rights Reserved</p>
+
     </div>
+
 </footer>
