@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*body{
     background-color: #fff;
 }
@@ -39,11 +40,39 @@ body {
   font-size: 60px;
   color: #fff;
   text-align: center;
+=======
+>>>>>>> major update nav and hero section
 
+/* -------GLOBAL STYLES-------- */
+  /* Remove default margin */
+  html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
 }
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
 
+  h1 {
+    font-family: 'Rufina', serif;
+    text-decoration: none;
+  }
 
+  p {
+    font-family: 'PT Serif', serif;
 
+<<<<<<< HEAD
 h1 {
   font-family: 'Rufina', serif;
   text-decoration: none;
@@ -51,126 +80,98 @@ h1 {
 
 p {
   font-family: 'PT Serif', serif;
+=======
+  }
+>>>>>>> major update nav and hero section
 
-}
-
-.nav-bar {
-  display:flex;
-  width: 100%;
-  list-style-type: none;
-  /*background-color: #386150; */
-  background: linear-gradient(to bottom,#fff, lightgray );
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+/* -------HERO IMAGE-------- */
+  .hero-main {
+    background: url(../images/mormon-row.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    top: -22px; 
+    /* margin: 0 auto; */
   
-}
-  
-ul {
-  list-style: none;
+  }
 
-}
-  li {
-    float: left;
-    font-family: 'Rufina', serif;
-    margin-right: 20px;
-    ;
-    
-
-    
+   
+/* -------NAV BAR-------- */
+  .nav > ul {
+    display:flex;
+    justify-content: left;
+    list-style-type: none;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
+    /* background-color: #386150;
+    background: linear-gradient(to bottom,#386150, #000 ); */
   }
   
-  li a {
+  .nav > ul > li {
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+  }
+  .nav > ul > li a:hover {
+    scale: 1.1;
+    transition-duration:.3s;
+    color: rgb(21, 34, 34);
+  }
+  
+  .nav > ul > li a {
     display: block;
-    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: darkslategray;
   }
 
-  .grid {
-    background: #EEE;
-    /* max-width: 1200px; */
+  /* -------HERO CONTENT-------- */
+
+  .hero-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  /* clearfix */
-  /* .grid:after {
-    content: '';
-    display: block;
-    clear: both;
-  } */
-  * { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
+  .hero-title > h1 {
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    padding: 20px, 0px, 0px, 0px;
+    margin-top: 125px
 
-/* ---- grid ---- */
-
-.grid {
-  background: #EEE;
-  max-width: 1200px;
-}
-
-/* clearfix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* ---- grid-item ---- */
-
-.grid-item {
-  width: 160px;
-  height: 120px;
-  float: left;
-  background: #D26;
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
-}
-
-.grid-item--width2 { width: 320px; }
-.grid-item--width3 { width: 480px; }
-.grid-item--width4 { width: 640px; }
-
-.grid-item--height2 { height: 200px; }
-.grid-item--height3 { height: 260px; }
-.grid-item--height4 { height: 360px; }
-
-
-  
-  /* ---- grid-item ---- */
-/*   
-  .grid-item {
-    height: 100%;
-    background: #D26;
-    border: 2px solid #333;
-    border-color: hsla(0, 0%, 0%, 0.5);
-  } */
-.grid-item img {
-  /* width: 100%; */
-}
-  
-  .grid-item--width2 {  }
-  .grid-item--width3 { }
-  .grid-item--width4 { }
-  
-  .grid-item--height2 {  }
-  .grid-item--height3 { }
-  .grid-item--height4 { }
-  
-  
-  
-  /* Change the link color to #111 (black) on hover
-  li a:hover {
-    background-color: rgba(0, 0, 0, 2);
   }
+
+  .hero-title > p {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    width: 70%;
+
+  }
+
+  
+
+  
+    
+    /* Change the link color to #111 (black) on hover
+    li a:hover {
+      background-color: rgba(0, 0, 0, 2);
+    } */
 /* css-grid from the codepen */
 
   .gallery-container{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem;
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 .tile img{
@@ -182,6 +183,7 @@ body { font-family: sans-serif; }
 .tile:nth-child(1){
     grid-column: span 4;
     grid-row: span 2;
+
 }
 
 .tile:nth-child(2),
