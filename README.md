@@ -1,6 +1,8 @@
 # Welcome to my Site
 ## *Rebekah Goodman | 11/21*
 
+View My Site Here: https://rgoodman394.github.io
+
 Thank you for visiting my project for the Code Louisville Front End Web Development course Fall '21.
 When deciding what my project would be on, I thought it would be fun to use my site to display some of 
 my photography. Since COVID started last year, I picked up photography (epecially film photography)
